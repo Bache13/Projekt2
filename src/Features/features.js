@@ -1,11 +1,10 @@
 import React, { useState } from 'react'; 
-import { decrement } from '../Features/counterSlice'
 import { addToListCategory } from '../Features/categorySlice'
 import { useSelector, useDispatch } from 'react-redux'
  
 
 export function Budget () {
-    const count = useSelector((state) => state.counter.value)
+    const count = useSelector((state) => state.category.value)
     const listCategory = useSelector((state) => state.category.list)
     const dispatch = useDispatch()
     const [inputValue, setInputValue] = useState('');
@@ -24,7 +23,6 @@ export function Budget () {
         const valueToDecrement = parseInt(inputValue, 10);
 
         if (!isNaN(valueToDecrement) && inputCategory !== '') {
-            dispatch(decrement(valueToDecrement));
             dispatch(addToListCategory({ category: inputCategory, cost: valueToDecrement}))
             setInputValue('') // Används för att tömma fältet
             setinputCategory('') // Används för att tömma fältet
@@ -47,10 +45,14 @@ export function Budget () {
             </p>
 
             <div className='budget'>
-                {/* <div>{count}</div> */}
-                <br></br>
+                <label>
+                    Kategori
                 <input type='text' alt='Textruta för typ av kostnad' value={inputCategory} onChange={handleCategoryChange} placeholder='Typ av kostnad'></input>
+                </label>
+                <label>
+                    Kostnad
                 <input type='number' alt='Nummerruta för kostnad i kronor' value={inputValue} onChange={handleChange} placeholder='Belopp'></input>
+                </label>
                 <button className='addbtn' onClick={handleAdd}>Add</button>
             </div>
 

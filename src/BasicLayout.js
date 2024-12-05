@@ -9,9 +9,9 @@ export function Menu() {
             
             <nav>
             <NavLink to="/">Home</NavLink> &nbsp;
+            <NavLink to="/budget">Budget</NavLink>&nbsp;
             <NavLink to="/about">About</NavLink> &nbsp;
             <NavLink to="/profile">Profile</NavLink>&nbsp;
-            <NavLink to="/budget">Budget</NavLink>&nbsp;
             </nav>
             <main>
                 <Outlet />
