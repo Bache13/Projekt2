@@ -44,12 +44,16 @@ export function Budget () {
                 <input type='number' value={inputValue} onChange={handleChange} placeholder='Belopp'></input>
                 <button onClick={handleAdd}>Add</button>
             </div>
-{/* 
+
             <div className='table'>
-                {listCategory.map(item)}
-
-            </div>             */}
-
+                {listCategory.map(x =>
+                <ul>
+                    <div key={x} >
+                        <li>{x.category}: {x.cost} kr</li>
+                    </div>
+                    </ul> 
+                )}
+            </div>         
         </>
     )
 }
