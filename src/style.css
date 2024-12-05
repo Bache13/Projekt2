@@ -1,12 +1,15 @@
 /* NAVIGATION */
 nav {
     display: flex;
-    background-color: #aaa;
-    padding: 0 20px
+    justify-content: center;
+    background-color: #aaaaaa59;
+    padding: 0 20px;
 }
 
 nav a {
     color: black;
+    font-weight: bold;
+    text-decoration: none;
     padding: 20px;
 }
 
@@ -17,7 +20,12 @@ nav a:hover {
 /* OTHER */
 
 body {
+    display: flex;
+    justify-content: center;
     margin: 0;
+    background-image: url(../src/Images/alexander-mils-lCPhGxs7pww-unsplash.jpg);
+    background-size: cover;
+    color: rgb(255, 255, 255);
 }
 
 body,
@@ -40,4 +48,40 @@ label {
     display: flex;
     flex-direction: column;
     margin: 20px 0
+}
+
+h1 {
+    text-align: center;
+    /* color: white; */
+}
+
+.container {
+    border: solid 2px black;
+    background-color: rgb(197, 193, 193);
+    color: black;
+    padding: 30px;
+    /* width: 300px; */
+}
+
+.budget {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+.saldo {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.addbtn {
+    border: solid 2px rgba(0, 0, 0, 0.582);
+    border-radius: 20px;
+}
+
+.addbtn:hover {
+    background-color: yellow;
 }

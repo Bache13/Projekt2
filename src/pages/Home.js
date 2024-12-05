@@ -1,8 +1,8 @@
 export default function Home() {
     return (
         <>
-            <h1>Välkommen till budgethanteraren!</h1>
-            <p>SPara och skriv in din budget!</p>
+            <h2>Välkommen till budgethanteraren!</h2>
+            <p>Spara och skriv in din budget!</p>
         </>
     )
 }

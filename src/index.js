@@ -1,12 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App';
-import Budget from './pages/budget';
-import About from './pages/about'
-import Profile from './pages/profile'
 import { BrowserRouter } from 'react-router-dom'
 import { Provider } from 'react-redux';
-import { store } from './store';
+import { store } from './app/store';
+import { Routing } from './Routing';
 
 
 
@@ -15,10 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-    {/* <App /> */}
-    <Budget />
-    {/* <About />
-    <Profile/> */}
+        <Routing />
       </Provider>
     </BrowserRouter>
   </React.StrictMode>
