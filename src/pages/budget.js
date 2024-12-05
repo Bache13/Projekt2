@@ -1,3 +1,8 @@
+//Lägga allt det här i egen mapp och sedan länka in i budgetsidan?
+
+
+
+
 //import React from 'react'
 import { decrement } from '../counterSlice'
 import { addToListCategory } from '../categorySlice'
