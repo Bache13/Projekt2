@@ -11,7 +11,7 @@ export const categorySlice = createSlice({
     reducers: {
         addToListCategory: (state, action) => {
             if (state.value - action.payload.cost < 0) {
-                alert('Less than 0')
+                alert('Hoppas, du överskred budget')
                 return 
             } else {
                 state.value -= action.payload.cost 
