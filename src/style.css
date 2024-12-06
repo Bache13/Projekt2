@@ -36,7 +36,10 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
-
+body.overbudget {
+    background-image: url(../src/Images/6050c8e519b1f919df6cc0ac_kronofogden-rgb.png);
+    background-size: contain;
+}
 
 
 body,
