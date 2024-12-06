@@ -2,22 +2,29 @@
 nav {
     display: flex;
     justify-content: center;
-    background-color: #aaaaaa59;
+    background-color: lightgrey;
+    opacity: 85%;
     padding: 0 20px;
+   
 }
+
 
 nav a {
     color: black;
     font-weight: bold;
     text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 20px;
 }
 
+
 nav a:hover {
-    background-color: yellow;
+    background-color:white;
 }
 
+
 /* OTHER */
+
 
 body {
     display: flex;
@@ -26,23 +33,30 @@ body {
     background-image: url(../src/Images/alexander-mils-lCPhGxs7pww-unsplash.jpg);
     background-size: cover;
     color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
+
+
+
 
 body,
 button,
 input {
-    font-family: Arial;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;
 }
+
 
 main {
     padding: 20px;
 }
 
+
 button,
 input {
     padding: 10px 20px;
 }
+
 
 label {
     display: flex;
@@ -50,18 +64,49 @@ label {
     margin: 5px;
 }
 
-h1 {
+
+h1, h2 {
     text-align: center;
     /* color: white; */
 }
 
+
 .container {
-    border: solid 2px black;
+    box-shadow: 10px 8px 5px rgba(0, 0, 0, 0.9);
     background-color: rgb(197, 193, 193);
     color: black;
     padding: 30px;
+    
     /* width: 300px; */
 }
+
+
+.startpage{
+    box-shadow: 10px 8px 5px rgba(0, 0, 0, 0.9);
+    background-color: rgb(197, 193, 193);
+    color: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 800px;
+
+
+}
+
+
+.about {
+    box-shadow: 10px 8px 5px rgba(0, 0, 0, 0.9);
+    background-color: rgb(197, 193, 193);
+    color: black;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centrerar horisontellt inom .about */
+    width: 800px;
+    
+}
+
 
 .budget {
     display: flex;
@@ -70,6 +115,7 @@ h1 {
     gap: 5px;
 }
 
+
 .saldo {
     display: flex;
     justify-content: center;
@@ -77,11 +123,20 @@ h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
 
+
 .addbtn {
     border: solid 2px rgba(0, 0, 0, 0.582);
     border-radius: 20px;
 }
 
+
 .addbtn:hover {
-    background-color: yellow;
+    background-color: rgb(48, 128, 48);
 }
+
+
+.active {
+    color: rgb(48, 128, 48);
+}
+
+

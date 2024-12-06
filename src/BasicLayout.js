@@ -5,7 +5,7 @@ export function Menu() {
 
     return (
         <>
-            <h1>Budgethantering</h1>
+            <h1>💸💰Budgethantering💰💸</h1>
             
             <nav>
             <NavLink to="/">Home</NavLink> &nbsp;

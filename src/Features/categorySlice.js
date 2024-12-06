@@ -1,7 +1,8 @@
+
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
-    value: 40000,
+    value: "",
     list: []
 }
 
@@ -20,8 +21,11 @@ export const categorySlice = createSlice({
             console.log(action.payload)
             state.list.push(action.payload) 
         },
+        setMoneyBalance: (state, action) => {
+            state.value = action.payload;
+        }
     }    
 })
 
-export const { addToListCategory } = categorySlice.actions
+export const { addToListCategory, setMoneyBalance } = categorySlice.actions
 export default categorySlice.reducer
